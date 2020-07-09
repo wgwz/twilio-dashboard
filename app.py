@@ -1,6 +1,8 @@
 from flask import Flask, render_template
+from dotenv import load_dotenv
 from utils import fetch_sms
 
+load_dotenv()
 app = Flask(__name__)
 
 
