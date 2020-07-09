@@ -20,9 +20,16 @@ $ pip install -r requirements.txt
 
 ### Running locally
 
+Create the `.env` for required config values:
+
 ```
-(venv) $ export TWILIO_ACCOUNT_SID=<account-sid>
-(venv) $ export TWILIO_AUTH_TOKEN=<auth-token>
+(venv) $ cat .env 
+TWILIO_ACCOUNT_SID=<account-sid>
+TWILIO_AUTH_TOKEN=<auth-token>
+```
+
+Run the flask development server
+```
 (venv) $ flask run
 ```
 
@@ -31,7 +38,8 @@ Visit [localhost:5000/](localhost:5000/)
 ## Built With
 
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/) - The web framework used
-* [Twilio Sendgrid](https://www.twilio.com/sendgrid) - Email Service 
+* [python-dotenv](https://github.com/theskumar/python-dotenv) - For config
+* [Twilio Python](https://github.com/twilio/twilio-python) - For SMS 
 
 ## License
 
